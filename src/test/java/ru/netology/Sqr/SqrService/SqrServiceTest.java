@@ -1,25 +1,25 @@
-package ru.netology.sqr;
+package ru.netology.Sqr.SqrService;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.netology.sqr.SQRService;
 
-public class SQRServiceTest {
+
+public class SqrServiceTest {
     @Test
     public void calcSqrtInTheRange() {
-        SQRService service = new SQRService();
+        SqrService service = new SqrService();
 
         int expected = 3;
-        int actual = service.calcSqrt(200, 300);
+        int actual = service.calcSqr(200, 300);
 
         Assertions.assertEquals(expected, actual);
     }
     @Test
     public void calcSqrtOutTheRange() {
-        SQRService service = new SQRService();
+        SqrService service = new SqrService();
 
         int expected = 0;
-        int actual = service.calcSqrt(10, 99);
+        int actual = service.calcSqr(10, 99);
 
         Assertions.assertEquals(expected, actual);
     }
